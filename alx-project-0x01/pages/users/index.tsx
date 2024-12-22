@@ -1,7 +1,9 @@
+import Header from "@/components/layout/Header"
 const Users: React.FC = ()=>{
     return(
         <div>
-            Posts
+            <Header />
+            <h1>Users</h1>
         </div>
     )
 }
