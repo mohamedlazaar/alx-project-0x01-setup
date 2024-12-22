@@ -273,4 +273,4 @@ const UserModal: React.FC<UserModalProps> = ({ onClose, onSubmit }) => {
   )
 }
 
-export default UserModal
+export default UserModal;
