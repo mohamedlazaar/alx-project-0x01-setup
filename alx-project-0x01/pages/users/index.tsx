@@ -5,7 +5,7 @@ import { UserData, UserProps } from "@/interfaces";
 import React, { use, useState } from "react";
 
 
-const Users: React.FC<{ users: UserProps[] }> = ({ users }) => {
+const Users: React.FC<{ posts: UserProps[] }> = ({ posts }) => {
     const [isModalOpen, setModalOpen] = useState(false);
     const [newUser, setNewUser] = useState<UserData | null>(null);
 
@@ -27,7 +27,7 @@ const Users: React.FC<{ users: UserProps[] }> = ({ users }) => {
                 </div>
 
                 <div className="grid grid-cols-3 gap-4 mt-4">
-                    {users?.map(({ id, name, email, phone, address, username, website, company }: UserProps, key: number) => (
+                    {posts.map(({ id, name, email, phone, address, username, website, company }: UserProps, key: number) => (
                         <UserCard id={id} name={name} email={email} phone={phone} address={address} username={username} website={website} company={company} key={key} />
     
                     ))}
